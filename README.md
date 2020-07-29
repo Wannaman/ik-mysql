@@ -63,6 +63,10 @@
             <version>5.1.46</version>  
         </dependency>  
 
+### 3、打包上传  
+* `mvn package`打包之后在`target`目录之下会有一个`releases`目录  
+* 将该目录下的压缩包上传至es的`plugins`目录之下进行解压
+* 解压之后会有会生成`elasticsearch`和`mysql-connector-java-5.1.46.jar` 再将`mysql`的`jar`包移入`elasticsearch`之下重启es即可  
 ## 注意：
 * **所下载的版本是对应elasticSearch的版本<br >但是pom中所写的`<elasticsearch.version>5.6.16</elasticsearch.version>`版本不一定是你所下的版本所以修改版本即可**  
 
